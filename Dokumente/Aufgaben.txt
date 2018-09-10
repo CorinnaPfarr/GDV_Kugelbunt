@@ -10,7 +10,7 @@ Mirco:
 
 Leon:
 --------------------
-1. Feintyp 1 (Schiesst nach Spieler zurück)
+1. Feintyp 1 (Schiesst Spieler zurück)
 2. Hebel für Trigger
 3. Level 2
 4. Feintyp 3 (Verfolgt Spieler, hält den Spieler bei colision 2 sekunden fest)
