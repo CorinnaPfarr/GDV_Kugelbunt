@@ -1,7 +1,9 @@
-###GDV_Kugelbunt
+### GDV_Kugelbunt
 
-####Mitglieder:
+#### Mitglieder:
 * Corinna Pfarr
 * Leon Schilling
 * Mirco Schichting
 * Tom Haupt
+
+##### 10.09.2018
