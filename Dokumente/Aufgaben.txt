@@ -10,11 +10,12 @@ Mirco:
 
 Leon:
 --------------------
-1. Feintyp 1 (Schiesst nach Spieler zurück)
+1. Feintyp 1 (Schiesst Spieler zurück)
 2. Hebel für Trigger
 3. Level 2
 4. Feintyp 3 (Verfolgt Spieler, hält den Spieler bei colision 2 sekunden fest)
 5. Falltür
+6. Item (Schweben für 3 Sekunden)
 --------------------
 
 Ina:
@@ -32,5 +33,5 @@ Tom:
 3. Menü (Grafik, Steuerung, etc.)
 4. Highscoresystem (Alle 4 Level anzeigen & gesamt)
 5. Feindtyp 2
-6. Wand die zur Seite schupst
+6. Wand die zur Seite schubst
 --------------------
