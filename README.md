@@ -6,4 +6,9 @@
 * Mirco Schichting
 * Tom Haupt
 
-##### 10.09.2018
+#### Branches:
+* master
+* Mirco-development
+* Tom-development
+
+##### 14.09.2018
