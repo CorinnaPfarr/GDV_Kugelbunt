@@ -5,10 +5,10 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour {
 
 	public GameObject player;
-	public float horSpd = 1.5f;
+	//public float horSpd = 1.5f;
 
 
-	private float yaw = 0.0f;
+	//private float yaw = 0.0f;
 	private Vector3 offset;
 
 	// Use this for initialization
@@ -19,10 +19,10 @@ public class CameraScript : MonoBehaviour {
 	// Calls every frame
 	void Update() {
 		// Set values to rotate
-		yaw += horSpd * Input.GetAxis("Mouse X");
+		//yaw += horSpd * Input.GetAxis("Mouse X");
 
 		// Rotate the camera on mouse move, only track X axis
-		transform.eulerAngles = new Vector3(0.0f, yaw, 0.0f);
+		//transform.eulerAngles = new Vector3(0.0f, yaw, 0.0f);
 	}
 
 	// Update is called once per frame, after Update() is finished updating.

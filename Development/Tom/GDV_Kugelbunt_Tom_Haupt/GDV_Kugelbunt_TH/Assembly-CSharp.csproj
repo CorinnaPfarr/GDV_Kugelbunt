@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
+    <Compile Include="Assets\Scripts\WayGeneratorScript.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>I:/Eigene Dateien/Dokumente/AI_Studium_DM/12. Semester/GDV/Projekt/Repo_Github/GDV_Kugelbunt/Development/Tom/GDV_Kugelbunt_Tom_Haupt/GDV_Kugelbunt_TH/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
