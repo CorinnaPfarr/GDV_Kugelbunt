@@ -6,16 +6,16 @@ public class BBSchalter : MonoBehaviour {
 
    
 
-    public BeweglicherBlockScript bbs;
+    public BeweglicherBlockScript bbs; //verknüpft sich mit dem anderen script
 
 	void Start () {
-      //  bbs = GetComponent<BeweglicherBlockScript>();
+    
     }
 
     void OnTriggerEnter() {
         bbs.schalterUmlegen();
     }
-	// Update is called once per frame
+	
 	void Update () {
 		
 	}
