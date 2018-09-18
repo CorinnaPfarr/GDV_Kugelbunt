@@ -17,7 +17,7 @@ public class FloorGenerator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		for(int i = 0; i < 2048; i++) {
+		for(int i = 0; i < 1024; i++) {
 			spawnPrefab();
 		}
 	}

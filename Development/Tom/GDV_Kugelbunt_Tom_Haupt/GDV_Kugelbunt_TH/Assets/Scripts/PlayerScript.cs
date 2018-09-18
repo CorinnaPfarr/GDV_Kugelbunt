@@ -8,6 +8,14 @@ public class PlayerScript : MonoBehaviour {
 
 	public float speed;
 
+	// When player collides with item
+	void OnCollisionEnter(Collision colObj) {
+		if(colObj.gameObject.CompareTag("ItemThree")) {
+			//colObj.gameObject.SetActive(false);
+			Destroy(colObj.gameObject);
+		}
+	}
+
 	void Start () {
 		rb = GetComponent<Rigidbody>();
 	}
