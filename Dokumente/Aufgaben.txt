@@ -32,6 +32,6 @@ Tom:
 2. Item (Zeit abziehen)
 3. Menü (Grafik, Steuerung, etc.)
 4. Highscoresystem (Alle 4 Level anzeigen & gesamt)
-5. Feindtyp 2
+5. Feindtyp 2 (Bei Collision, spieler verlangsamen)
 6. Wand die zur Seite schubst
 --------------------
