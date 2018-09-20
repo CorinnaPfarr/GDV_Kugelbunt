@@ -496,10 +496,13 @@ MonoBehaviour:
   lFloorPre: {fileID: 1667909430407022, guid: ff99cda740bbf35478a7e12ddebb364c, type: 2}
   rFloorPre: {fileID: 1242234728227486, guid: 463973af56e45d946987fcf472985a0a, type: 2}
   tFloorPre: {fileID: 1043884887752190, guid: 8fe3bebcc7ef54c41be9479de9673928, type: 2}
+  iFloorPre: {fileID: 1899231916124318, guid: 1b60d3adf3598234bb9c843bb9a8abec, type: 2}
   floorArray:
   - {fileID: 1667909430407022, guid: ff99cda740bbf35478a7e12ddebb364c, type: 2}
   - {fileID: 1043884887752190, guid: 8fe3bebcc7ef54c41be9479de9673928, type: 2}
   - {fileID: 1242234728227486, guid: 463973af56e45d946987fcf472985a0a, type: 2}
+  - {fileID: 1899231916124318, guid: 1b60d3adf3598234bb9c843bb9a8abec, type: 2}
+  - {fileID: 1886578565228474, guid: 7d4b2c7778f899443945e0122ab8c4e5, type: 2}
   floorStart: {fileID: 996814756}
   rbPlayer: {fileID: 2017216440}
   player: {fileID: 2017216434}
