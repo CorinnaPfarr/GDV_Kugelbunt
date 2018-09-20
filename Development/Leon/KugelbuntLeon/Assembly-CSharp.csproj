@@ -56,16 +56,18 @@
      <Compile Include="Assets\Scripts\BBSchalter.cs" />
      <Compile Include="Assets\Scripts\BeweglicherBlockScript.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\KanoneScript.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\ProjektilSkript.cs" />
      <Compile Include="Assets\Scripts\VerfolgerScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/Uni und Projekte/Kugelbunt_Home/Leon/KugelbuntLeon/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/Uni und Projekte/Kugelbunt_Home/Leon/KugelbuntLeon/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Uni und Projekte/Kugelbunt_Home/Leon/KugelbuntLeon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>D:/Uni und Projekte/Kugelbunt_Home/Leon/KugelbuntLeon/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/Uni und Projekte/Kugelbunt_Home/Leon/KugelbuntLeon/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
