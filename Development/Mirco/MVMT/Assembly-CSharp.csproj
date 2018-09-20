@@ -61,24 +61,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraMVMT.cs" />
-    <Compile Include="Assets\Colission.cs" />
-    <Compile Include="Assets\MVMT.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\BlockSpawner.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\CameraMVMT.cs" />
+    <Compile Include="Assets\Scripts\Colission.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\Jump.cs" />
+    <Compile Include="Assets\Scripts\MVMT.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Speed.cs" />
+    <Compile Include="Assets\Scripts\RotateItem.cs" />
+    <Compile Include="Assets\Scripts\ScratchyScript.cs" />
+    <Compile Include="Assets\Scripts\Sound.cs" />
+    <Compile Include="Assets\Scripts\Speed.cs" />
+    <Compile Include="Assets\Scripts\WallScript.cs" />
+    <Compile Include="Assets\Scripts\WreckingBallItem.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/mirco/OneDrive/Desktop/Kugelbunt/GDV_Kugelbunt/Development/Mirco/MVMT/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/mirco/OneDrive/Desktop/Neuer Ordner/MVMT/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/mirco/OneDrive/Desktop/Kugelbunt/GDV_Kugelbunt/Development/Mirco/MVMT/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/mirco/OneDrive/Desktop/Neuer Ordner/MVMT/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/mirco/OneDrive/Desktop/Kugelbunt/GDV_Kugelbunt/Development/Mirco/MVMT/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/mirco/OneDrive/Desktop/Neuer Ordner/MVMT/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/mirco/OneDrive/Desktop/Kugelbunt/GDV_Kugelbunt/Development/Mirco/MVMT/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/mirco/OneDrive/Desktop/Neuer Ordner/MVMT/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>G:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
