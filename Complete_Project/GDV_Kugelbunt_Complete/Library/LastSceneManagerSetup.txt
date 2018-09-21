@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/LevelTom.unity
+- path: Assets/Scenes/LeonsLevel.unity
   isLoaded: 1
   isActive: 1

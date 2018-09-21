@@ -1,8 +1,11 @@
 ﻿//using UnityEngine.SceneManagement;
 using UnityEngine;
 using System;
+using System.Collections;
 
 public class MVMT : MonoBehaviour {
+
+    #region Mirco
     public AudioManager audioManager;
     public Rigidbody rb; // reference to the Rigidbody called "rb"
     //public float forwardForce = 700f; //Speed of the ForwardForce
@@ -11,8 +14,11 @@ public class MVMT : MonoBehaviour {
     public float jumpFactor = 0.0f;
     public float speed = 15;
     public float heightToRespawn = -5;
+    public float waitTimeBetweenBlinks = 0.25f;
+    public int maxBlinkCount = 4;
     HealthSystem healthSystem = new HealthSystem(9);
-
+    
+    private MeshRenderer meshRenderer;
     private Vector3 startPosition;
     //materialArray für die "Lebensanzeige" de Balls
     public Material[] material;
@@ -23,6 +29,7 @@ public class MVMT : MonoBehaviour {
 
     private void Start()
     {
+        meshRenderer = GetComponent<MeshRenderer>();
         audioManager = AudioManager.Instance;
         startPosition = gameObject.transform.position;
         healthSystem.GetHealth();
@@ -46,7 +53,32 @@ public class MVMT : MonoBehaviour {
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
         rb.AddForce(Vector3.zero);
+
+        Reanimate();
     }
+
+    private void Reanimate()
+    {
+        StartCoroutine(Blink(maxBlinkCount));
+        healthSystem.Heal(healthSystem.healthMax);
+        rend.sharedMaterial = material[0];
+    }
+
+    private IEnumerator Blink(int maxBlinkCount)
+    {
+        int blinkCount = 0;
+
+        while (blinkCount < maxBlinkCount)
+        {
+            yield return new WaitForSeconds(waitTimeBetweenBlinks);
+            meshRenderer.enabled = false;
+            yield return new WaitForSeconds(waitTimeBetweenBlinks);
+            meshRenderer.enabled = true;
+            blinkCount++;
+            yield return null;
+        }
+    }
+
     // Update is called once per frame 
     void FixedUpdate()
     {
@@ -109,20 +141,26 @@ public class MVMT : MonoBehaviour {
     //Lässt den Spielball kaputter aussehen, wenn er öfter kollidiert
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Wall"))
+        if (col.gameObject.GetComponent<WallScript>() || col.gameObject.GetComponent<Block>())
         {
             healthSystem.Damage(1);
-            Debug.Log("Autsch!");
-            if (healthSystem.GetHealth() < 6)
+            if(healthSystem.GetHealth() <= 0)
             {
-                rend.sharedMaterial = material[1];
+                Respawn();
             }
-            if (healthSystem.GetHealth() < 3)
+            else if (healthSystem.GetHealth() < 3)
             {
                 rend.sharedMaterial = material[2];
             }
+            else if (healthSystem.GetHealth() < 6)
+            {
+                rend.sharedMaterial = material[1];
+            }
+            
         }
     }
+
+    #endregion
 
 
 
