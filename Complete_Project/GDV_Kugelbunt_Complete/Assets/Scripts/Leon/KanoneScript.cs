@@ -7,9 +7,10 @@ public class KanoneScript : MonoBehaviour {
 
     private bool inReichweite =false;
     private  GameObject player;
-    private float intervall = 3;
+    public float intervall = 3;
     public GameObject bullet;
     public float ticktack;
+    public bool beweglich = true;
     
 
 
@@ -30,7 +31,7 @@ public class KanoneScript : MonoBehaviour {
 
         if (inReichweite == true)
         {
-            transform.LookAt(playerPostition);
+            if (beweglich == true) { transform.LookAt(playerPostition); }
 
            
             ticktack -= Time.deltaTime;
