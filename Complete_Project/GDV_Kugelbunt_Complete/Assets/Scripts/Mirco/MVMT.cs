@@ -9,7 +9,7 @@ public class MVMT : MonoBehaviour {
     //public float sidewaysForce = 500f; //Speed of the SidewaysForce
     public Vector3 movement;
     public float jumpFactor = 0.0f;
-    public float speed = 15;
+    public float speed = 10;
     public float heightToRespawn = -5;
     HealthSystem healthSystem = new HealthSystem(9);
 
@@ -20,6 +20,12 @@ public class MVMT : MonoBehaviour {
 
 
     public bool wreckingBall = false;
+
+    //Anfang Leons Codeeinschub
+    public float warteZeit;
+    public bool blocked=false;
+    public float tempSpeed;
+    //ende Leons Codeeinschub
 
     private void Start()
     {
@@ -51,6 +57,17 @@ public class MVMT : MonoBehaviour {
     void FixedUpdate()
     {
         Move();
+
+        //anfang Leons Codeeinschub
+        if (blocked == true)
+        {
+            warteZeit -= Time.deltaTime;
+            if (warteZeit <= 0f)
+            {
+                freiheit();
+            }
+        }
+        //Ende Leons Codeeinschub
     }
 
     private void Move()
@@ -88,7 +105,23 @@ public class MVMT : MonoBehaviour {
         //}
         #endregion
 
+
     }
+    //anfang Leons Codeeinschub
+    public void festhalten()   //wenn der Gegner den Spieler einholt wird diese aktiviert->in Update geht es weiter *Leon
+    {
+        tempSpeed = speed;
+        speed = 0;
+        blocked = true;
+        warteZeit = 2.0f;
+    }
+
+    void freiheit()
+    {
+        blocked = false;
+        speed = tempSpeed;
+    }
+    //Ende Leons Codeeinschub
 
     //private void OnTriggerEnter(Collider other)
     //{

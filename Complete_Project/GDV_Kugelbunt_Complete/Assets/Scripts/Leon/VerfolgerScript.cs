@@ -6,7 +6,7 @@ public class VerfolgerScript : MonoBehaviour
 {
 
     public Transform target;        //in unity sollte der Player als target gesetzt werden
-    public PlayerController pc;
+    public MVMT pc; //pc weil es ehemals PlayerControllerscript hieß bevor die Projekte zusammengelegt wurden // -> player muss als Ziel gesetzt werden
     public float verfolgerspeed;
     public float dist;
 
