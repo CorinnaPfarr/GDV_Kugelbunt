@@ -98,6 +98,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "selbstzerst\xF6rung": 5
   speed: 10
+  maxGroesse: 4
+  wachsen: 0.5
+  projektil: {fileID: 1465995296495910}
 --- !u!135 &135539762031360412
 SphereCollider:
   m_ObjectHideFlags: 1
