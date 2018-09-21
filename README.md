@@ -1,14 +1,18 @@
 ### GDV_Kugelbunt
 
 #### Mitglieder:
-* Corinna Pfarr
+* Corinna Pfarr?
 * Leon Schilling
 * Mirco Schichting
 * Tom Haupt
 
-#### Branches:
-* master
-* Mirco-development
-* Tom-development
+#### Complete_Project:
+Alle Unity Projekte der Mitglieder in ein
+Gesamtprojekt zusammengefasst.
+ 
+#### Zuvor Branches zum entwickeln:
+* Tom-Development
+* Ina-Development
+* Mirco-Development
 
-##### 14.09.2018
+##### 21.09.2018

@@ -1,0 +1,5 @@
+Spiel Konzept Final:
+3 leben, die um eins verringert werden wenn man runterfällt und "respawnt" wird.
+Wenn drei leben verbraucht sind, zurück ins Menü und spielstände auf 0 bzw. 3 leben.
+
+Items ziehen zeit ab bzw. schreiben zeit gut.
