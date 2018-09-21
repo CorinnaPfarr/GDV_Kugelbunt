@@ -64,13 +64,11 @@
      <Compile Include="Assets\Scripts\Leon\VerfolgerScript.cs" />
      <Compile Include="Assets\Scripts\Mirco\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Mirco\BlockSpawner.cs" />
-     <Compile Include="Assets\Scripts\Mirco\CameraController.cs" />
      <Compile Include="Assets\Scripts\Mirco\CameraMVMT.cs" />
      <Compile Include="Assets\Scripts\Mirco\Colission.cs" />
      <Compile Include="Assets\Scripts\Mirco\HealthSystem.cs" />
      <Compile Include="Assets\Scripts\Mirco\Jump.cs" />
      <Compile Include="Assets\Scripts\Mirco\MVMT.cs" />
-     <Compile Include="Assets\Scripts\Mirco\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Mirco\RotateItem.cs" />
      <Compile Include="Assets\Scripts\Mirco\ScratchyScript.cs" />
      <Compile Include="Assets\Scripts\Mirco\Sound.cs" />
@@ -103,16 +101,16 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>I:/Eigene Dateien/Dokumente/AI_Studium_DM/12. Semester/GDV/Projekt/Complete/Complete_Project/GDV_Kugelbunt_Complete/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>D:/Uni und Projekte/Kugelbunt/GDV_Kugelbunt/Complete_Project/GDV_Kugelbunt_Complete/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>I:/Eigene Dateien/Dokumente/AI_Studium_DM/12. Semester/GDV/Projekt/Complete/Complete_Project/GDV_Kugelbunt_Complete/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/Uni und Projekte/Kugelbunt/GDV_Kugelbunt/Complete_Project/GDV_Kugelbunt_Complete/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>I:/Eigene Dateien/Dokumente/AI_Studium_DM/12. Semester/GDV/Projekt/Complete/Complete_Project/GDV_Kugelbunt_Complete/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>D:/Uni und Projekte/Kugelbunt/GDV_Kugelbunt/Complete_Project/GDV_Kugelbunt_Complete/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>I:/Eigene Dateien/Dokumente/AI_Studium_DM/12. Semester/GDV/Projekt/Complete/Complete_Project/GDV_Kugelbunt_Complete/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/Uni und Projekte/Kugelbunt/GDV_Kugelbunt/Complete_Project/GDV_Kugelbunt_Complete/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Programme/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -313,10 +311,10 @@
  <HintPath>D:/Programme/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Users/holzjunge/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>C:/Users/Leon/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
- <HintPath>C:/Users/holzjunge/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Leon/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>D:/Programme/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
