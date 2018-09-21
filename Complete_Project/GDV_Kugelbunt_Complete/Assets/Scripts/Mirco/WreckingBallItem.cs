@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class WreckingBallItem : MonoBehaviour {
@@ -10,6 +11,8 @@ public class WreckingBallItem : MonoBehaviour {
     private int wallLayer, playerLayer;
     public BoxCollider Wall;
     //public GameObject Wall;
+
+    public string levelToLoad;
 
     private void Start()
     {
@@ -25,19 +28,21 @@ public class WreckingBallItem : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject.GetComponent<MVMT>())
         {
+            //SceneManager.LoadScene(levelToLoad);
             if (playerLayer == default(int))
             {
                 playerLayer = other.gameObject.layer;
             }
             AudioManager.Instance.Play("pickUp");
-            StartCoroutine(WreckingBall());
+            StartCoroutine(WreckingBall(other.gameObject.GetComponent<MVMT>()));
         }
     }
 
-    IEnumerator WreckingBall()
+    IEnumerator WreckingBall(MVMT collidingPlayer)
     {
+        collidingPlayer.wreckingBall = true;
         Physics.IgnoreLayerCollision(playerLayer, wallLayer);
         boxCollider.enabled = false;
         gameObject.GetComponent<MeshRenderer>().enabled = false;
@@ -45,5 +50,8 @@ public class WreckingBallItem : MonoBehaviour {
         Physics.IgnoreLayerCollision(playerLayer, wallLayer, false);
         boxCollider.enabled = true;
         gameObject.GetComponent<MeshRenderer>().enabled = true;
+        collidingPlayer.wreckingBall = false;
     }
+
+   
 }

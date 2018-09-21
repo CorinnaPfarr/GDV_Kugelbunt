@@ -5,7 +5,7 @@ using System;
 
 //eigener AudioManager
 public class AudioManager : MonoBehaviour {
-
+    //Singleton
     private static AudioManager instance;
 
     public Sound[] sounds;

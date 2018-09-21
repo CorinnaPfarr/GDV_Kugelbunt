@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthSystem {
 
     private int health;
-    private int healthMax = 9;
+    public int healthMax = 9;
 
 
     public HealthSystem(int healthMax)
