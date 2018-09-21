@@ -36,7 +36,7 @@ public class KanoneScript : MonoBehaviour {
             ticktack -= Time.deltaTime;
             if (ticktack <= 0f)
             {
-                print("peng");
+             
                // GameObject bullet;
                 Instantiate(bullet, transform.position + (player.transform.position - transform.position).normalized, transform.rotation); //das Projektil Prefab wird Instanziert und zwischen Spieler und Objekt platziert
                 ticktack = intervall;
