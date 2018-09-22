@@ -23,18 +23,16 @@ public class CheckpointScript : MonoBehaviour {
 	public List<GameObject> checkPList = new List<GameObject>();
 
 	void OnTriggerEnter(Collider colObj) {
-		if(colObj.gameObject.CompareTag("Player")) {
-			// Dont render sphere anymore
-			gameObject.GetComponent<Renderer>().enabled = false;
-			//Destroy(gameObject);
+		// Dont render sphere anymore
+		gameObject.GetComponent<Renderer>().enabled = false;
+		//Destroy(gameObject);
 
-			// Set light intensity if player enters collider
-			checkLightComp.intensity = 50;
+		// Set light intensity if player enters collider
+		checkLightComp.intensity = 50;
 
-			// Set checkpoint obj position as respawn point
-			respawnPos = this.transform.position;
-			startPos = respawnPos;
-		}
+		// Set checkpoint obj position as respawn point
+		respawnPos = this.transform.position;
+		startPos = respawnPos;
 	}
 
 	// Use this for initialization

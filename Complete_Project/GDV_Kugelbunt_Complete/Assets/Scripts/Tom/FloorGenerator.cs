@@ -47,7 +47,7 @@ public class FloorGenerator : MonoBehaviour {
 	private List<GameObject> checkPList;
 
 	// Reference to Checkpoint script
-	private CheckpointScript script;
+	//private CheckpointScript script;
 
 	// Set endCube, endCubeRotator as global for update()
 	private GameObject endCubeRotator;
