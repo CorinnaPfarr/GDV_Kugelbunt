@@ -9,6 +9,7 @@ public class CameraMVMT : MonoBehaviour {
     private void Start()
     {
         transform.Rotate(10, 0, 0);
+        
     }
     
 

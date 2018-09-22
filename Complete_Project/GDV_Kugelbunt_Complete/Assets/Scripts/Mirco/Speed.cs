@@ -6,7 +6,7 @@ public class Speed : MonoBehaviour
 
     public GameObject player;
     [SerializeField] private MVMT mvmtScript;
-    [SerializeField] private float newSpeed = 30;
+    [SerializeField] private float newSpeed = 200;
     [SerializeField] private float delayTillReset = 5;
 
     private float oldSpeed;
