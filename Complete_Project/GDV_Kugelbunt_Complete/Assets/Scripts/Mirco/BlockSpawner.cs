@@ -9,7 +9,7 @@ public class BlockSpawner : CameraMVMT {
     //Referenz zum Gameobejct/Blöcke, die gespawnt werden sollen
     public GameObject blockPrefab;
 
-    public Vector3 spawnOffset = new Vector3(0, 0, 50);
+    public Vector3 spawnOffset = new Vector3(0, 0, 30);
 
     public float triggerDistance = 5;
     private float timeToSpawn = 2;
@@ -30,7 +30,7 @@ public class BlockSpawner : CameraMVMT {
         //    timeToSpawn = Time.time + timeBetweenWaves;
         //}
 
-        if(Vector3.Distance(Player.transform.position, gameObject.transform.position) <= triggerDistance)
+        if(Vector3.Distance(Player.transform.position, gameObject.transform.position) <= triggerDistance && Player.transform.position.z < 150)
         {
             SpawnBlocks();
         }

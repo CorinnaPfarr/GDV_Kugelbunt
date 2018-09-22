@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/LeonsLevel.unity
+- path: Assets/Scenes/LevelMirco.unity
   isLoaded: 1
   isActive: 1

@@ -83,7 +83,9 @@
     <Compile Include="Assets\Scripts\Mirco\ScratchyScript.cs" />
     <Compile Include="Assets\Scripts\Mirco\Sound.cs" />
     <Compile Include="Assets\Scripts\Mirco\Speed.cs" />
+    <Compile Include="Assets\Scripts\Mirco\Speed2.cs" />
     <Compile Include="Assets\Scripts\Mirco\WallScript.cs" />
+    <Compile Include="Assets\Scripts\Mirco\WarningTextScript.cs" />
     <Compile Include="Assets\Scripts\Mirco\WreckingBallItem.cs" />
     <Compile Include="Assets\Scripts\Tom\CameraScript.cs" />
     <Compile Include="Assets\Scripts\Tom\deprecated\WayColliderScript.cs" />
