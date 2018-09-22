@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "selbstzerst\xF6rung": 5
-  speed: 10
+  speed: 15
   maxGroesse: 4
   wachsen: 0.5
   projektil: {fileID: 1465995296495910}

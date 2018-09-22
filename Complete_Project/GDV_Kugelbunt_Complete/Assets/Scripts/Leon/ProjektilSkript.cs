@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProjektilSkript : MonoBehaviour {
 
     public float selbstzerstörung = 5;
-    public float speed = 10;
+    public float speed = 15;
 
     public float maxGroesse = 4;
     public float wachsen = 0.5f;

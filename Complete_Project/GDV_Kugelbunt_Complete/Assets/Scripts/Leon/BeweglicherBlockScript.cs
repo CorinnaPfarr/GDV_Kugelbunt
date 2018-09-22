@@ -8,11 +8,11 @@ public class BeweglicherBlockScript : MonoBehaviour {
     
     
     public bool schalter;  // damit das Objekt nicht sofort aufsteigt
-    private float zielHoehe;
+    public float zielHoehe=10;
 
 	void Start () {
 
-        zielHoehe = 10; //damit das Objekt an einer bestimmten Höhe stehen bleibt
+         //damit das Objekt an einer bestimmten Höhe stehen bleibt
          schalter = false;
     }
 	
