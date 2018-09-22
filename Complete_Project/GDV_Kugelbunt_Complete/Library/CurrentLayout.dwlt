@@ -23,8 +23,12 @@ MonoBehaviour:
   m_RootView: {fileID: 6}
 =======
   m_RootView: {fileID: 2}
+<<<<<<< HEAD
 >>>>>>> MircosBranch
   m_MinSize: {x: 950, y: 300}
+=======
+  m_MinSize: {x: 950, y: 492}
+>>>>>>> MircosBranch
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -58,7 +62,7 @@ MonoBehaviour:
   controlID: 51
 =======
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
 >>>>>>> MircosBranch
 --- !u!114 &3
@@ -165,7 +169,11 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 12652
+>>>>>>> MircosBranch
+=======
+  controlID: 144
 >>>>>>> MircosBranch
 --- !u!114 &6
 MonoBehaviour:
@@ -200,7 +208,11 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 12647
+>>>>>>> MircosBranch
+=======
+  controlID: 63
 >>>>>>> MircosBranch
 --- !u!114 &7
 MonoBehaviour:
@@ -261,8 +273,8 @@ MonoBehaviour:
     y: 408
     width: 922
     height: 539
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -447,9 +459,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 32.586586, y: -56.046875, z: 1170.6764}
+    m_Target: {x: 15.693655, y: -61.890625, z: 1204.3347}
     speed: 2
-    m_Value: {x: 32.586586, y: -56.046875, z: 1170.6764}
+    m_Value: {x: 15.693655, y: -61.890625, z: 1204.3347}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -479,11 +491,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
     speed: 2
-    m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+    m_Value: {x: -0.7071068, y: 0, z: -0, w: -0.7071068}
   m_Size:
-    m_Target: 90.03956
+    m_Target: 35.345844
     speed: 2
-    m_Value: 90.03956
+    m_Value: 35.345844
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -539,8 +551,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -553,18 +565,18 @@ MonoBehaviour:
       y: 17
       width: 920
       height: 501
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 460, y: 250.5}
+    m_Scale: {x: 1.1255087, y: 1.1255087}
+    m_Translation: {x: 442.38858, y: 280.1959}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -460
-      y: -250.5
-      width: 920
-      height: 501
+      x: -393.05658
+      y: -248.95045
+      width: 817.4082
+      height: 445.13208
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
@@ -600,10 +612,10 @@ MonoBehaviour:
     height: 926
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 1571}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 9cd6edff120feeffda15eeff6425eeff143af5fff493f8ff904dfaff6410feffd4d8ffff02d9ffff7ce7ffff38f9ffff000000000432000002330000563f010002410100
+    m_ExpandedIDs: e6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -673,6 +685,7 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -685,12 +698,20 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Resources/Mirco
 >>>>>>> MircosBranch
+=======
+    - Assets/Resources/Mirco/Materials
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Resources/Mirco/Materials
+>>>>>>> MircosBranch
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Uni und Projekte\Kugelbunt\GDV_Kugelbunt\Complete_Project\GDV_Kugelbunt_Complete
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 002b0000
     m_LastClickedID: 11008
@@ -699,6 +720,11 @@ MonoBehaviour:
     m_SelectedIDs: 602d0000
     m_LastClickedID: 11616
     m_ExpandedIDs: 00000000082b00007e2b0000d22b0000162c0000962c0000602d0000
+>>>>>>> MircosBranch
+=======
+    m_SelectedIDs: 520a0000
+    m_LastClickedID: 2642
+    m_ExpandedIDs: 00000000b00900003c0a0000a60a0000fa0a00008e0c0000
 >>>>>>> MircosBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -732,9 +758,13 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000002b0000d02b00001a2c0000a02c0000
 =======
     m_ExpandedIDs: 00000000082b0000d22b0000162c0000
+>>>>>>> MircosBranch
+=======
+    m_ExpandedIDs: 00000000b00900003c0a0000a60a0000fa0a0000940b00008e0c0000
 >>>>>>> MircosBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -762,10 +792,14 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
 <<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000
 =======
+=======
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> MircosBranch
     m_ExpandedInstanceIDs: 00000000
 >>>>>>> MircosBranch
     m_RenameOverlay:
