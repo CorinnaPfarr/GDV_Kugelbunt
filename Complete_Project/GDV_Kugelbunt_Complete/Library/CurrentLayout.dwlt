@@ -13,69 +13,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: -3
-    y: 51
+    x: 0
+    y: 43
     width: 1920
     height: 997
   m_ShowMode: 4
   m_Title: 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_RootView: {fileID: 8}
-=======
-  m_RootView: {fileID: 7}
->>>>>>> LeonDevBranch
-  m_MinSize: {x: 950, y: 542}
-=======
-  m_RootView: {fileID: 2}
-<<<<<<< HEAD
-  m_MinSize: {x: 950, y: 471}
->>>>>>> MircosBranch
-=======
-  m_MinSize: {x: 950, y: 492}
->>>>>>> MircosBranch
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 1041
-    y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 202
-    height: 947
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 13}
-=======
-    width: 490
-    height: 610
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
->>>>>>> LeonDevBranch
-  m_Panes:
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 0
-=======
-    width: 1920
-    height: 997
-  m_MinSize: {x: 950, y: 492}
-  m_MaxSize: {x: 10000, y: 10000}
->>>>>>> MircosBranch
---- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,19 +34,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 4}
+  - {fileID: 9}
+  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 887, y: 492}
-  m_MaxSize: {x: 16012, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 56
---- !u!114 &4
+  controlID: 51
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,44 +60,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 0
-<<<<<<< HEAD
-    y: 0
-    width: 1410
-    height: 631
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
-=======
-    y: 30
-    width: 1920
-    height: 947
-<<<<<<< HEAD
-  m_MinSize: {x: 911, y: 421}
-  m_MaxSize: {x: 22006, y: 10021}
->>>>>>> MircosBranch
-  vertical: 0
-  controlID: 578
-=======
     x: 1531
     y: 0
     width: 389
     height: 947
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
->>>>>>> LeonDevBranch
-=======
-  m_MinSize: {x: 917, y: 442}
-  m_MaxSize: {x: 22012, y: 10021}
-  vertical: 0
-  controlID: 105
->>>>>>> MircosBranch
---- !u!114 &5
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,15 +88,15 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 379
-    height: 610
+    height: 573
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &6
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -189,46 +110,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 202
-    y: 0
-<<<<<<< HEAD
-    width: 1410
-    height: 947
-<<<<<<< HEAD
-  m_MinSize: {x: 406, y: 492}
-  m_MaxSize: {x: 10004, y: 14042}
-  vertical: 1
-  controlID: 577
-=======
-  m_MinSize: {x: 202, y: 421}
-  m_MaxSize: {x: 4002, y: 8021}
-  vertical: 1
-  controlID: 134
->>>>>>> MircosBranch
-=======
     x: 0
-    y: 610
+    y: 573
     width: 1531
-    height: 337
+    height: 374
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 19}
+  - {fileID: 13}
+  - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 1
->>>>>>> LeonDevBranch
-=======
-    width: 923
-    height: 947
-  m_MinSize: {x: 202, y: 442}
-  m_MaxSize: {x: 4002, y: 8042}
-  vertical: 1
-  controlID: 106
->>>>>>> MircosBranch
---- !u!114 &7
+  m_LastSelected: 0
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,44 +134,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 7}
+  - {fileID: 2}
   - {fileID: 8}
-  - {fileID: 3}
-  - {fileID: 9}
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
-=======
-    x: 923
->>>>>>> MircosBranch
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 941
-    height: 631
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-=======
-    width: 206
-    height: 947
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 13}
-  m_Panes:
-  - {fileID: 13}
->>>>>>> MircosBranch
-  m_Selected: 0
-  m_LastSelected: 0
-=======
     width: 1920
     height: 997
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
->>>>>>> LeonDevBranch
---- !u!114 &8
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -291,36 +159,14 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
-=======
-    x: 1129
->>>>>>> MircosBranch
     y: 0
-<<<<<<< HEAD
     width: 1920
-<<<<<<< HEAD
-    height: 997
-  m_MinSize: {x: 950, y: 542}
-  m_MaxSize: {x: 10000, y: 10000}
-=======
-    width: 361
-    height: 947
-  m_MinSize: {x: 234, y: 271}
-  m_MaxSize: {x: 10004, y: 10021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
->>>>>>> MircosBranch
-=======
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
->>>>>>> LeonDevBranch
---- !u!114 &9
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -334,38 +180,36 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
-<<<<<<< HEAD
-    y: 0
-<<<<<<< HEAD
-=======
     y: 977
->>>>>>> LeonDevBranch
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-<<<<<<< HEAD
-  m_LastLoadedLayoutName: 
-=======
-    width: 429
-=======
-    x: 1490
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 5}
+  m_Position:
+    serializedVersion: 2
+    x: 0
     y: 0
-    width: 430
->>>>>>> MircosBranch
+    width: 1531
     height: 947
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 0
->>>>>>> MircosBranch
-=======
->>>>>>> LeonDevBranch
+  m_MinSize: {x: 406, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
+  vertical: 1
+  controlID: 52
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -378,77 +222,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 4}
   - {fileID: 11}
-  - {fileID: 6}
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 30
-    width: 1920
-    height: 947
-  m_MinSize: {x: 885, y: 492}
-  m_MaxSize: {x: 18008, y: 14042}
-  vertical: 0
-  controlID: 576
-=======
-    y: 0
-    width: 923
-    height: 408
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
->>>>>>> MircosBranch
-=======
     y: 0
     width: 1531
-    height: 947
-  m_MinSize: {x: 610, y: 492}
-  m_MaxSize: {x: 12010, y: 14042}
-  vertical: 1
-  controlID: 57
->>>>>>> LeonDevBranch
+    height: 573
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
+  vertical: 0
+  controlID: 53
 --- !u!114 &11
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 5}
-  - {fileID: 12}
-  - {fileID: 2}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 977
-    width: 1920
-    height: 20
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
-=======
-    y: 0
-    width: 1531
-    height: 610
-  m_MinSize: {x: 610, y: 221}
-  m_MaxSize: {x: 12010, y: 4021}
-  vertical: 0
-  controlID: 58
->>>>>>> LeonDevBranch
---- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -464,31 +250,18 @@ MonoBehaviour:
     serializedVersion: 2
     x: 379
     y: 0
-    width: 662
-    height: 610
+    width: 1152
+    height: 573
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-<<<<<<< HEAD
-  - {fileID: 14}
-=======
-    y: 408
-    width: 923
-    height: 539
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
->>>>>>> MircosBranch
-=======
   - {fileID: 17}
-  - {fileID: 13}
->>>>>>> LeonDevBranch
+  - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &13
+  m_LastSelected: 1
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -497,7 +270,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 400, y: 100}
@@ -509,10 +281,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 92
-    width: 922
-    height: 465
+    x: 468
+    y: 181
+    width: 973
+    height: 501
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -522,126 +294,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
-=======
->>>>>>> LeonDevBranch
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 400, y: 100}
-  m_MaxSize: {x: 2048, y: 2048}
-  m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-<<<<<<< HEAD
-    x: 468
-    y: 181
-    width: 973
-    height: 501
-=======
-    x: 922
-    y: 100
-    width: 202
-    height: 926
->>>>>>> MircosBranch
-  m_PersistentViewDataDictionary: {fileID: 0}
-<<<<<<< HEAD
-  m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: bcf1ffff00000000
-=======
-    m_SelectedIDs: c20a0000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 54a2ebffb0ededff1e59efffe49aefffc692f0ff5838f1ffde49fcffce7bfcff46f3fcffe6fbffff00000000c80d0000d80d000000570000
->>>>>>> MircosBranch
-=======
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 10e4feff7aeeffffe6fbffff00000000
->>>>>>> MircosBranch
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-  m_ExpandedScenes:
-  - LevelMirco
-  m_CurrenRootInstanceID: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_CurrentSortingName: TransformSorting
-=======
->>>>>>> LeonDevBranch
---- !u!114 &14
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-<<<<<<< HEAD
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-<<<<<<< HEAD
-    x: 1614
-    y: 92
-    width: 306
-=======
-    x: 1492
-    y: 19
-    width: 428
->>>>>>> MircosBranch
-    height: 926
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewResizer:
-    m_CachedPref: 220
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_PreviewWindow: {fileID: 0}
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-=======
->>>>>>> LeonDevBranch
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -654,22 +306,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
-    y: 702
+    y: 665
     width: 1529
-    height: 316
-=======
-    x: 1131
-    y: 19
-    width: 357
-    height: 926
->>>>>>> MircosBranch
+    height: 353
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
-    m_ClassNames:
-    - Material
+    m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
     m_VersionControlStates: []
@@ -678,55 +322,21 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 1
-<<<<<<< HEAD
     m_Folders:
-    - Assets/Scripts/Mirco
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-<<<<<<< HEAD
-  - Assets/AudioFiles
-=======
-    m_Folders: []
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Prefabs/Leon
->>>>>>> LeonDevBranch
-=======
-  - Assets/Scripts/Mirco
->>>>>>> MircosBranch
+  - Assets
   m_LastFoldersGridSize: -1
-<<<<<<< HEAD
   m_LastProjectPath: D:\Uni und Projekte\Kugelbunt\GDV_Kugelbunt\Complete_Project\GDV_Kugelbunt_Complete
-=======
-  m_LastProjectPath: C:\Users\mirco\OneDrive\Desktop\Kugelbunt\GDV_Kugelbunt\Complete_Project\GDV_Kugelbunt_Complete
->>>>>>> MircosBranch
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_SelectedIDs: 34310000
-    m_LastClickedID: 12596
-    m_ExpandedIDs: 000000006e2e00000a2f0000482f000000ca9a3b
-=======
-    m_SelectedIDs: 300c0000
-    m_LastClickedID: 3120
-    m_ExpandedIDs: 00000000a2090000600a0000
->>>>>>> MircosBranch
-=======
-    m_SelectedIDs: 01ca9a3b
-    m_LastClickedID: 1000000001
-    m_ExpandedIDs: 00000000a00900005e0a0000a20a0000240b000000ca9a3b
->>>>>>> LeonDevBranch
-=======
-    m_SelectedIDs: 380d0000
-    m_LastClickedID: 3384
-    m_ExpandedIDs: 00000000ac0900007c0a0000c60a0000
->>>>>>> MircosBranch
+    m_SelectedIDs: 002b0000
+    m_LastClickedID: 11008
+    m_ExpandedIDs: 00000000002b0000d02b00001a2c0000a02c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -742,11 +352,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-<<<<<<< HEAD
-      m_ClientGUIView: {fileID: 8}
-=======
-      m_ClientGUIView: {fileID: 6}
->>>>>>> LeonDevBranch
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -758,19 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 000000006e2e00000a2f0000
-=======
-    m_ExpandedIDs: 00000000a2090000600a0000a40a0000
->>>>>>> MircosBranch
-=======
-    m_ExpandedIDs: 00000000a00900005e0a0000a20a0000240b0000
->>>>>>> LeonDevBranch
-=======
-    m_ExpandedIDs: 00000000ac0900007c0a0000
->>>>>>> MircosBranch
+    m_ExpandedIDs: 00000000002b0000d02b00001a2c0000a02c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -797,13 +391,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
-=======
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 00000000
->>>>>>> MircosBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -819,15 +408,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_ClientGUIView: {fileID: 12}
-=======
-      m_ClientGUIView: {fileID: 8}
->>>>>>> MircosBranch
-=======
-      m_ClientGUIView: {fileID: 6}
->>>>>>> LeonDevBranch
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -837,15 +418,8 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_DirectoriesAreaWidth: 374
-=======
-  m_DirectoriesAreaWidth: 176
->>>>>>> MircosBranch
-=======
-  m_DirectoriesAreaWidth: 238
---- !u!114 &15
+  m_DirectoriesAreaWidth: 115
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -879,8 +453,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
->>>>>>> LeonDevBranch
---- !u!114 &16
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -900,135 +473,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 471
-    y: 19
-    width: 937
-    height: 610
-=======
-    x: 0
-    y: 500
-    width: 922
-=======
-    x: -3
-    y: 508
-    width: 921
->>>>>>> MircosBranch
-    height: 518
->>>>>>> MircosBranch
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_MaximizeOnPlay: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_TargetDisplay: 0
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_HBaseRangeMin: -468.5
-    m_HBaseRangeMax: 468.5
-    m_VBaseRangeMin: -296.5
-    m_VBaseRangeMax: 296.5
-=======
-    m_HBaseRangeMin: -461
-    m_HBaseRangeMax: 461
-=======
-    m_HBaseRangeMin: -460.5
-    m_HBaseRangeMax: 460.5
->>>>>>> MircosBranch
-    m_VBaseRangeMin: -250.5
-    m_VBaseRangeMax: 250.5
->>>>>>> MircosBranch
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 17
-<<<<<<< HEAD
-<<<<<<< HEAD
-      width: 937
-      height: 593
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 468.5, y: 296.5}
-=======
-      width: 922
-      height: 501
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 461, y: 250.5}
->>>>>>> MircosBranch
-=======
-      width: 921
-      height: 501
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 460.5, y: 250.5}
->>>>>>> MircosBranch
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-      x: -468.5
-      y: -296.5
-      width: 937
-      height: 593
-=======
-      x: -461
-=======
-      x: -460.5
->>>>>>> MircosBranch
-      y: -250.5
-      width: 921
-      height: 501
->>>>>>> MircosBranch
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LastWindowPixelSize: {x: 937, y: 610}
-=======
-  m_LastWindowPixelSize: {x: 922, y: 518}
->>>>>>> MircosBranch
-=======
-  m_LastWindowPixelSize: {x: 921, y: 518}
->>>>>>> MircosBranch
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000100000100
-  m_XRRenderMode: 0
-=======
     x: 0
     y: 92
     width: 377
-    height: 589
+    height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 807cfdffc6fbffffd4fbffff00000000
+    m_ExpandedIDs: bcf9ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1044,7 +498,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
   m_ExpandedScenes:
   - LeonsLevel
@@ -1052,8 +506,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_CurrentSortingName: TransformSorting
->>>>>>> LeonDevBranch
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1073,55 +526,20 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 381
     y: 92
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 465
-    height: 610
-=======
-    width: 922
-=======
-    x: -3
-    y: 100
-    width: 921
->>>>>>> MircosBranch
-    height: 387
->>>>>>> MircosBranch
+    width: 1148
+    height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-<<<<<<< HEAD
-  lastFramingTime: 15237.243524764273
-=======
-    width: 658
-    height: 589
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_SceneLighting: 1
-  lastFramingTime: 3310.9485674436482
->>>>>>> LeonDevBranch
-=======
-  lastFramingTime: 1201.0808973365845
->>>>>>> MircosBranch
+  lastFramingTime: 0
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: -44.61737, y: -1.1119852, z: 715.33875}
+    m_Target: {x: -0.020881653, y: 0.28047943, z: -0.17545891}
     speed: 2
-    m_Value: {x: -44.61737, y: -1.1119852, z: 715.33875}
-=======
-    m_Target: {x: 41.721012, y: 56.549713, z: 130.99387}
-    speed: 2
-    m_Value: {x: 41.721012, y: 56.549713, z: 130.99387}
->>>>>>> LeonDevBranch
-=======
-    m_Target: {x: -142.76102, y: -43.762486, z: 730.1861}
-    speed: 2
-    m_Value: {x: -142.76102, y: -43.762486, z: 730.1861}
->>>>>>> MircosBranch
+    m_Value: {x: -0.020881653, y: 0.28047943, z: -0.17545891}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1149,39 +567,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 0.2514293, y: -0.6531527, z: 0.24473062, w: 0.6710304}
-=======
-    m_Target: {x: 0.117708735, y: -0.63646686, z: 0.09912406, w: 0.75579697}
->>>>>>> MircosBranch
+    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
     speed: 2
-    m_Value: {x: 0.117708735, y: -0.63646686, z: 0.09912406, w: 0.75579697}
+    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: 8.317896
+    m_Target: 502.78995
     speed: 2
-    m_Value: 8.317896
-=======
-    m_Target: 11.73573
-    speed: 2
-    m_Value: 11.73573
->>>>>>> MircosBranch
-=======
-    m_Target: {x: -0.05237002, y: 0.12459787, z: -0.006618556, w: -0.9908167}
-    speed: 2
-    m_Value: {x: -0.052369263, y: 0.124596074, z: -0.0066184606, w: -0.9908024}
-  m_Size:
-    m_Target: 122.27444
-    speed: 2
-    m_Value: 122.27444
->>>>>>> LeonDevBranch
-=======
-    m_Target: 238.01683
-    speed: 2
-    m_Value: 238.01683
->>>>>>> MircosBranch
+    m_Value: 502.78995
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1193,7 +585,7 @@ MonoBehaviour:
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1213,10 +605,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1043
-    y: 92
-    width: 486
-    height: 589
+    x: 507
+    y: 94
+    width: 1532
+    height: 790
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -1228,10 +620,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -243
-    m_HBaseRangeMax: 243
-    m_VBaseRangeMin: -286
-    m_VBaseRangeMax: 286
+    m_HBaseRangeMin: -766
+    m_HBaseRangeMax: 766
+    m_VBaseRangeMin: -386.5
+    m_VBaseRangeMax: 386.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1249,30 +641,30 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 486
-      height: 572
+      width: 1532
+      height: 773
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 243, y: 286}
+    m_Translation: {x: 766, y: 386.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -243
-      y: -286
-      width: 486
-      height: 572
+      x: -766
+      y: -386.5
+      width: 1532
+      height: 773
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 486, y: 589}
+  m_CurrentColorSpace: 1
+  m_LastWindowPixelSize: {x: 1532, y: 790}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
   m_XRRenderMode: 0
---- !u!114 &19
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1292,8 +684,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 682
-    width: 1529
-    height: 336
+    x: 8
+    y: 718
+    width: 1366
+    height: 308
   m_PersistentViewDataDictionary: {fileID: 0}

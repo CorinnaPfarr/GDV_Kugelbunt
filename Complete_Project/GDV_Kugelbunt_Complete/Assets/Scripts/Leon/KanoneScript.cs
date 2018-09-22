@@ -9,7 +9,7 @@ public class KanoneScript : MonoBehaviour {
     private  GameObject player;
     public float intervall = 3;
     public GameObject bullet;
-    public float ticktack;
+    private float ticktack;
     public bool beweglich = true;
     
 
