@@ -16,6 +16,9 @@ public class FloorGenerator : MonoBehaviour {
 	// Item with floor
 	public GameObject iFloorPre;
 
+	// Checkpoint with floor
+	public GameObject cFloorPre;
+
 	public GameObject[] floorArray;
 
 	// Start Floorcube
@@ -35,9 +38,16 @@ public class FloorGenerator : MonoBehaviour {
 	// Max nr. of items to spawn, max nr. of pushers to spawn
 	private int maxRandNr;
 	private int maxRandPushNr;
+	private int maxCheckNr;
 
 	// List for generated prefabs
 	public List<GameObject> prefabList = new List<GameObject>();
+
+	// List for checkpoints
+	private List<GameObject> checkPList;
+
+	// Reference to Checkpoint script
+	private CheckpointScript script;
 
 	// Set endCube, endCubeRotator as global for update()
 	private GameObject endCubeRotator;
@@ -69,6 +79,8 @@ public class FloorGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		Debug.Log(checkPList);
 
 		// Set levelLength to 1024
 		levelLength = 1024;
@@ -149,10 +161,10 @@ public class FloorGenerator : MonoBehaviour {
 		// Set Rotator at same x and z coordinates
 		endCubeRotator.transform.position = new Vector3(endCube.transform.position.x, (endCube.transform.position.y) + 0.25f, endCube.transform.position.z);
 		// Set endLight positions
-		endLight1.transform.position = new Vector3(endCube.transform.position.x + 2.0f, 0.5f, endCube.transform.position.z + 0.0f);
-		endLight2.transform.position = new Vector3(endCube.transform.position.x + -2.0f, 0.5f, endCube.transform.position.z + 0.0f);
-		endLight3.transform.position = new Vector3(endCube.transform.position.x + 0.0f, 0.5f, endCube.transform.position.z + 2.0f);
-		endLight4.transform.position = new Vector3(endCube.transform.position.x + 0.0f, 0.5f, endCube.transform.position.z + -2.0f);
+		endLight1.transform.position = new Vector3(endCube.transform.position.x + 2.0f, 0.5f, endCube.transform.position.z);
+		endLight2.transform.position = new Vector3(endCube.transform.position.x + -2.0f, 0.5f, endCube.transform.position.z);
+		endLight3.transform.position = new Vector3(endCube.transform.position.x, 0.5f, endCube.transform.position.z + 2.0f);
+		endLight4.transform.position = new Vector3(endCube.transform.position.x, 0.5f, endCube.transform.position.z + -2.0f);
 		// Rotate spot lights
 		endLight1.transform.Rotate(-85.0f, 0.0f, 0.0f);
 		endLight2.transform.Rotate(-85.0f, 0.0f, 0.0f);
@@ -189,7 +201,7 @@ public class FloorGenerator : MonoBehaviour {
 
 	public void spawnPrefab() {
 		// Random nr from 0 to 2?
-		int randNr = Random.Range(0, 5);
+		int randNr = Random.Range(0, 6);
 		int randOK = Random.Range(0, 100);
 
 		//Debug.Log("random: " + randNr);
@@ -198,19 +210,36 @@ public class FloorGenerator : MonoBehaviour {
 		if(randNr == 3 && maxRandNr < 20 && randOK % 5 == 0) {
 			// If random int is 3 AND randNrMax is lower than 20 AND random nr between 0-100 is dividable by 5, spawn item.
 			floorStart = (GameObject)Instantiate(floorArray[randNr], floorStart.transform.GetChild(0).transform.GetChild(1).position, Quaternion.identity);
+			// Set name for item
+			floorStart.name = "FloorItem";
+			// Increment max random number for the item
 			maxRandNr++;
 		} else if(randNr == 4 && maxRandPushNr < 10 && randOK % 12 == 0) {
 			// If random int is 4 AND maxRandPushNr is lower than 5 AND random nr between 0-100 is dividable by 2, spawn pusher.
 			floorStart = (GameObject)Instantiate(floorArray[randNr], floorStart.transform.GetChild(0).transform.GetChild(1).position, Quaternion.identity);
+			// Set name for pusher
+			floorStart.name = "FloorPusher";
+			// Increment max random number for the pusher
 			maxRandPushNr++;
+		} else if(randNr == 5 && maxCheckNr < 4 && randOK % 24 == 0){
+			// If random int is 5 AND maxCheckNr is lower than 4 AND random nr between 0-100 is dividable by 24, spawn checkpoint.
+			floorStart = (GameObject)Instantiate(floorArray[randNr], floorStart.transform.GetChild(0).transform.GetChild(1).position, Quaternion.identity);
+			// Get script values for generated prefab
+			//script = (CheckpointScript)floorStart.GetComponent<CheckpointScript>();
+			// Set name for check
+			floorStart.name = "FloorCheck";
+			// Increment max random number for the pusher
+			maxCheckNr++;
 		} else {
 			// Spawn standard floorPrefabs and set randomNr Range to 0-2
 			randNr = Random.Range(0, 3);
 			floorStart = (GameObject)Instantiate(floorArray[randNr], floorStart.transform.GetChild(0).transform.GetChild(randNr).position, Quaternion.identity);
+			// Set name for standard
+			floorStart.name = "FloorStandard";
 		}
 
 		// Assign Prefab a Name for later calling.
-		floorStart.name = "generatedPrefab#" + runningNr;
+		//floorStart.name = "generatedPrefab#" + runningNr;
 		// Add prefab to prefabList
 		prefabList.Insert(runningNr, floorStart);
 	}

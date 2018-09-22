@@ -3,28 +3,47 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PusherScript : MonoBehaviour {
+	//bool active = true;
 
-	// Pusher
-	public GameObject pushObj;
+	private float speed = 120.0f;
+	private float force = 200.0f;
 
-	private bool active;
-
-	private float wandEndPos;
-	
-	void pushWall() {
-		pushObj.transform.Translate(Vector3.back * Time.deltaTime * 4);
-	}
+	// Material
+	private Material red;
 
 	void Start() {
-		active = true;
-		wandEndPos = -1.3f;
-		//InvokeRepeating("pushWall", 12.0f, 8.0f);
+		StartCoroutine(moveWallLeft());
 	}
 
-	// Update is called once per frame
-	void Update () {
-		if (active == true && this.transform.position.x <= wandEndPos) {
-			//transform.Translate(0, Time.deltaTime, 0);
+	void Update() {
+		
+	}
+
+	void OnTriggerEnter(Collider colObj) {
+		if (colObj.gameObject.CompareTag("Player")) {
+			//Debug.Log("Player pushed!");
+			colObj.gameObject.GetComponent<Rigidbody>().AddForce (force, 0, 0);
+			// First set Material than change it
+			red = Resources.Load("Tom/PusherMatTrig", typeof(Material)) as Material;
+			this.GetComponent<Renderer>().material = red;
 		}
+	}
+
+	IEnumerator moveWallLeft() {
+		// Move object
+		this.transform.GetChild(1).Translate(Vector3.back * Time.deltaTime * speed);
+		// Wait two seconds
+		yield return new WaitForSeconds(2);
+		// Recursive call
+		StartCoroutine(moveWallRight());
+	}
+
+	IEnumerator moveWallRight() {
+		// Move object
+		this.transform.GetChild(1).Translate(Vector3.forward * Time.deltaTime * speed);
+		// Wait two seconds
+		yield return new WaitForSeconds(2);
+		// Recursive call
+		StartCoroutine(moveWallLeft());
 	}
 }

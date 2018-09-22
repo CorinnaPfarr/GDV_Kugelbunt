@@ -8,6 +8,8 @@ public class PlayerScript : MonoBehaviour {
 
 	public float speed;
 
+	public Vector3 playerRePos;
+
 	// When player collides with item
 	void OnCollisionEnter(Collision colObj) {
 		if(colObj.gameObject.CompareTag("ItemThree")) {
