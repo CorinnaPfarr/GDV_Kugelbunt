@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Mirco\Block.cs" />
     <Compile Include="Assets\Scripts\Mirco\BlockSpawner.cs" />
     <Compile Include="Assets\Scripts\Mirco\CameraMVMT.cs" />
+    <Compile Include="Assets\Scripts\Mirco\checkpoint1.cs" />
     <Compile Include="Assets\Scripts\Mirco\Colission.cs" />
     <Compile Include="Assets\Scripts\Mirco\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\Mirco\Jump.cs" />
@@ -95,6 +96,8 @@
     <Compile Include="Assets\Scripts\Tom\MenuScript.cs" />
     <Compile Include="Assets\Scripts\Tom\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\Tom\PusherScript.cs" />
+    <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
+    <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

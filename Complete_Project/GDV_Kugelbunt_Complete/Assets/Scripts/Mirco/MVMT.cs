@@ -20,12 +20,15 @@ public class MVMT : MonoBehaviour {
     
     private MeshRenderer meshRenderer;
     private Vector3 startPosition;
+    private Vector3 newPosition;
+
     //materialArray für die "Lebensanzeige" de Balls
     public Material[] material;
     Renderer rend;
 
 
     public bool wreckingBall = false;
+    
 
     private void Start()
     {
@@ -158,7 +161,17 @@ public class MVMT : MonoBehaviour {
             }
             
         }
+
+        if (col.gameObject.CompareTag("Checkpoint"))
+        {
+            newPosition = gameObject.transform.position;
+            startPosition = newPosition;
+        }
     }
+
+    
+       
+    
 
     #endregion
 

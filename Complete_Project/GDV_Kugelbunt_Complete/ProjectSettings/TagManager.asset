@@ -8,6 +8,7 @@ TagManager:
   - WreckingBall
   - ItemThree
   - Projektil
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
