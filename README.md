@@ -2,7 +2,7 @@
 
 #### Mitglieder:
 * Corinna Pfarr?
-* Leon Schilling
+* Leon Schillings
 * Mirco Schichting
 * Tom Haupt
 
