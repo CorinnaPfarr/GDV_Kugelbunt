@@ -83,7 +83,7 @@ public class FloorGenerator : MonoBehaviour {
 		Debug.Log(checkPList);
 
 		// Set levelLength to 1024
-		levelLength = 1024;
+		levelLength = 512;
 
 		// Set prefab runningNr
 		runningNr = 0;
