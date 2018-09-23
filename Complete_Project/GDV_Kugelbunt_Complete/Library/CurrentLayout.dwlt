@@ -42,9 +42,17 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1920
+<<<<<<< HEAD
     height: 997
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
+=======
+    height: 947
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
+  vertical: 0
+  controlID: 63
+>>>>>>> MircosBranch
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,6 +93,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 30
     width: 1920
     height: 947
@@ -92,6 +101,18 @@ MonoBehaviour:
   m_MaxSize: {x: 22008, y: 10021}
   vertical: 0
   controlID: 9
+=======
+    y: 0
+    width: 379
+    height: 573
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+>>>>>>> MircosBranch
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -204,6 +225,7 @@ MonoBehaviour:
     y: 0
     width: 429
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
@@ -211,6 +233,12 @@ MonoBehaviour:
   - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
+=======
+  m_MinSize: {x: 406, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
+  vertical: 1
+  controlID: 64
+>>>>>>> MircosBranch
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,6 +255,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 847
     height: 486
   m_MinSize: {x: 202, y: 221}
@@ -236,6 +265,14 @@ MonoBehaviour:
   - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
+=======
+    width: 1531
+    height: 573
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
+  vertical: 0
+  controlID: 65
+>>>>>>> MircosBranch
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -385,20 +422,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scripts/Tom
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scripts/Tom
+=======
+    - Assets/Scripts/Mirco
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scripts/Mirco
+>>>>>>> MircosBranch
   m_LastFoldersGridSize: -1
   m_LastProjectPath: I:\Eigene Dateien\Dokumente\AI_Studium_DM\12. Semester\GDV\Projekt\Repo_Github\GDV_Kugelbunt\Complete_Project\GDV_Kugelbunt_Complete
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: fe0a0000
     m_LastClickedID: 2814
     m_ExpandedIDs: 00000000ba090000dc090000800a0000b40a00000e0b0000a80b00000a0c0000b40c000000ca9a3b
+=======
+    m_SelectedIDs: 160e0000
+    m_LastClickedID: 3606
+    m_ExpandedIDs: 00000000f0090000120a00007e0a0000b60a0000ea0a0000440b00003a0c0000e40c0000
+>>>>>>> MircosBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -426,7 +477,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ba090000dc090000800a0000b40a00000e0b00000a0c0000b40c0000
+=======
+    m_ExpandedIDs: 00000000f0090000120a00007e0a0000b60a0000ea0a00003a0c0000c60c0000e40c0000
+>>>>>>> MircosBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -506,6 +561,7 @@ MonoBehaviour:
     width: 845
     height: 440
   m_PersistentViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -560,6 +616,36 @@ MonoBehaviour:
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
   m_XRRenderMode: 0
+=======
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 3c3c0000
+    m_LastClickedID: 15420
+    m_ExpandedIDs: ee80ffff52bdffff5cefffffd8fbffff0000000092360000e03800006e3a0000983d0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+  m_ExpandedScenes:
+  - LevelMirco
+  m_CurrenRootInstanceID: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentSortingName: TransformSorting
+>>>>>>> MircosBranch
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -586,14 +672,20 @@ MonoBehaviour:
     height: 465
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 0
+  lastFramingTime: 251.57809360686264
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -0.5912709, y: 0.6007261, z: 0.23098135}
     speed: 2
     m_Value: {x: -0.5912709, y: 0.6007261, z: 0.23098135}
+=======
+    m_Target: {x: 58.009216, y: -25.798962, z: 1123.467}
+    speed: 2
+    m_Value: {x: 58.009216, y: -25.798962, z: 1123.467}
+>>>>>>> MircosBranch
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -621,6 +713,7 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.08048317, y: 0.8937752, z: -0.17821065, w: -0.403645}
     speed: 2
     m_Value: {x: -0.08048317, y: 0.8937752, z: -0.17821065, w: -0.403645}
@@ -628,6 +721,15 @@ MonoBehaviour:
     m_Target: 10
     speed: 2
     m_Value: 10
+=======
+    m_Target: {x: 0.02191769, y: 0.9640035, z: -0.084080555, w: 0.25129148}
+    speed: 2
+    m_Value: {x: 0.02191769, y: 0.9640035, z: -0.084080555, w: 0.25129148}
+  m_Size:
+    m_Target: 173.68379
+    speed: 2
+    m_Value: 173.68379
+>>>>>>> MircosBranch
   m_Ortho:
     m_Target: 0
     speed: 2

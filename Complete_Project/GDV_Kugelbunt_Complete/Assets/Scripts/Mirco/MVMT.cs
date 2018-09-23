@@ -205,6 +205,7 @@ public class MVMT : MonoBehaviour {
         {
             newPosition = gameObject.transform.position;
             startPosition = newPosition;
+            other.gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
         if (other.gameObject.CompareTag("Ziel"))
         {
