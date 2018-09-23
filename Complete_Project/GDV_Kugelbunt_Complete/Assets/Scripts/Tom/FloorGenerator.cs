@@ -1,5 +1,5 @@
 ﻿/**  
-	Made by Tom Haupt, 21-09-2018.
+	Made by Tom Haupt, 23-09-2018.
  **/
 
 using System.Collections;
@@ -43,11 +43,7 @@ public class FloorGenerator : MonoBehaviour {
 	// List for generated prefabs
 	public List<GameObject> prefabList = new List<GameObject>();
 
-	// List for checkpoints
-	private List<GameObject> checkPList;
-
-	// Reference to Checkpoint script
-	private CheckpointScript script;
+	public List<GameObject> checkPList = new List<GameObject>();
 
 	// Set endCube, endCubeRotator as global for update()
 	private GameObject endCubeRotator;
@@ -67,7 +63,7 @@ public class FloorGenerator : MonoBehaviour {
 	private int runningNr;
 
 	// levelLength nr
-	private int levelLength;
+	public int levelLength;
 
 	// Last Generated Prefab, to get x,y,z axis
 	private GameObject lastPrefab;
@@ -79,10 +75,7 @@ public class FloorGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-		Debug.Log(checkPList);
-
-		// Set levelLength to 1024
+		// Set levelLength
 		levelLength = 512;
 
 		// Set prefab runningNr
@@ -134,6 +127,13 @@ public class FloorGenerator : MonoBehaviour {
 		startCube.GetComponent<Renderer>().material = floorMat;
 		endCube.GetComponent<Renderer>().material = floorMat;
 		endCubeRotator.GetComponent<Renderer>().material = floorMatEnd;
+
+		// Assign Script to endCubeRotator
+		endCubeRotator.AddComponent<EndScript>();
+		// Get the Collider of the endCubeRotator
+		Collider endCubeRotatorCol = endCubeRotator.GetComponent<Collider>();
+		// set is Trigger
+		endCubeRotatorCol.isTrigger = true;
 
 		// Set StartCube, endCube Size
 		startCube.transform.localScale = new Vector3(8.0f, 0.5f, 8.0f);
@@ -204,9 +204,6 @@ public class FloorGenerator : MonoBehaviour {
 		int randNr = Random.Range(0, 6);
 		int randOK = Random.Range(0, 100);
 
-		//Debug.Log("random: " + randNr);
-		//Debug.Log("random OK: " + randOK);
-
 		if(randNr == 3 && maxRandNr < 20 && randOK % 5 == 0) {
 			// If random int is 3 AND randNrMax is lower than 20 AND random nr between 0-100 is dividable by 5, spawn item.
 			floorStart = (GameObject)Instantiate(floorArray[randNr], floorStart.transform.GetChild(0).transform.GetChild(1).position, Quaternion.identity);
@@ -224,12 +221,12 @@ public class FloorGenerator : MonoBehaviour {
 		} else if(randNr == 5 && maxCheckNr < 4 && randOK % 24 == 0){
 			// If random int is 5 AND maxCheckNr is lower than 4 AND random nr between 0-100 is dividable by 24, spawn checkpoint.
 			floorStart = (GameObject)Instantiate(floorArray[randNr], floorStart.transform.GetChild(0).transform.GetChild(1).position, Quaternion.identity);
-			// Get script values for generated prefab
-			//script = (CheckpointScript)floorStart.GetComponent<CheckpointScript>();
 			// Set name for check
 			floorStart.name = "FloorCheck";
 			// Increment max random number for the pusher
 			maxCheckNr++;
+			// Add Checkpoint to list
+			checkPList.Add(floorStart);
 		} else {
 			// Spawn standard floorPrefabs and set randomNr Range to 0-2
 			randNr = Random.Range(0, 3);
@@ -238,8 +235,6 @@ public class FloorGenerator : MonoBehaviour {
 			floorStart.name = "FloorStandard";
 		}
 
-		// Assign Prefab a Name for later calling.
-		//floorStart.name = "generatedPrefab#" + runningNr;
 		// Add prefab to prefabList
 		prefabList.Insert(runningNr, floorStart);
 	}

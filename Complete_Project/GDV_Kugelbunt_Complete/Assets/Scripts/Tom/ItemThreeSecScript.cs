@@ -1,11 +1,20 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemThreeSecScript : MonoBehaviour {
+	// 
+	private UIScript uiScr;
+
+	void Start() {
+		uiScr = GameObject.Find("UI").GetComponent<UIScript>();
+	}
 
 	void OnTriggerEnter() {
+		// Decrease time by 3 seconds
+		uiScr.realSec -= 3f;
+		// Destroy Item
 		Destroy(gameObject);
-		Debug.Log("Item collected!");
 	}
 
 	// Update is called once per frame

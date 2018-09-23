@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour {
 
@@ -8,13 +9,26 @@ public class PlayerScript : MonoBehaviour {
 
 	public float speed;
 
-	public Vector3 playerRePos;
+	//public Vector3 playerRePos;
+
+	// Lives amount, must be public static, CHANGE LIVE AMOUNT HERE!!!
+	public static int lives = 3;
 
 	// When player collides with item
 	void OnCollisionEnter(Collision colObj) {
 		if(colObj.gameObject.CompareTag("ItemThree")) {
 			//colObj.gameObject.SetActive(false);
 			Destroy(colObj.gameObject);
+		}
+	}
+
+	// Check if player lives are 0, then go to menu
+	void Update() {
+		if(lives <= 0) {
+			// Load Menu
+			SceneManager.LoadScene("Menu");
+			// Trigger sound
+			
 		}
 	}
 
