@@ -8,9 +8,10 @@ public class ItemThreeSecScript : MonoBehaviour {
 
 	void OnTriggerEnter() {
 		Destroy(gameObject);
-		Debug.Log("Item collected!");
+		//Debug.Log("Item collected!");
 		// Decrease time by 3 seconds
-		UIScript.realSec = UIScript.realSec - 3;
+		UIScript.realSec = UIScript.getSeconds() - 3;
+		Debug.Log("Time decreased: " +  UIScript.getSeconds());
 	}
 
 	// Update is called once per frame
