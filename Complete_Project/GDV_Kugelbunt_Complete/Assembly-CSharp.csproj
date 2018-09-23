@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Leon\CameraController.cs" />
      <Compile Include="Assets\Scripts\Leon\HochRunterBlockScript.cs" />
      <Compile Include="Assets\Scripts\Leon\KanoneScript.cs" />
+     <Compile Include="Assets\Scripts\Leon\LevelVorbei.cs" />
      <Compile Include="Assets\Scripts\Leon\Projektil2Skript.cs" />
      <Compile Include="Assets\Scripts\Leon\ProjektilSkript.cs" />
      <Compile Include="Assets\Scripts\Leon\RechtsLinksBlockScript.cs" />
