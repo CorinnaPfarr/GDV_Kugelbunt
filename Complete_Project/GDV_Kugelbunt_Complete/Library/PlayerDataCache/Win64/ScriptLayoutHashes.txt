@@ -1,10 +1,8 @@
 WindowsStandalone
 PlayerPath?
-I:/Eigene Dateien/Dokumente/AI_Studium_DM/12. Semester/GDV/Projekt/Build/GDV_Kugelbunt_Complete.exe
+I:/Eigene Dateien/Dokumente/AI_Studium_DM/12. Semester/GDV/Projekt/Build/TomXtra/GDV_Kugelbunt_Complete.exe
 SceneListBegin?
 Assets/Scenes/Menu.unity
-Assets/Scenes/LeonsLevel.unity
-Assets/Scenes/LevelMirco.unity
 Assets/Scenes/LevelTom.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret

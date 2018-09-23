@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 9bf67ad09b972a046a0821741f7439b7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LeonsLevel.unity
     guid: f6eb39f5c59eb61488c66d3f82b403e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LevelMirco.unity
     guid: 4ad33bb94f636334a83b4deec5c13c7c
   - enabled: 1

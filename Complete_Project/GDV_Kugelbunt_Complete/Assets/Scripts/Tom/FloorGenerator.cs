@@ -128,10 +128,20 @@ public class FloorGenerator : MonoBehaviour {
 		endCube.GetComponent<Renderer>().material = floorMat;
 		endCubeRotator.GetComponent<Renderer>().material = floorMatEnd;
 
+		// Set isTrigger
+		// Assign Script to endCubeRotator
+		endCubeRotator.AddComponent<EndScript>();
+		// Get the Collider of the endCubeRotator
+		Collider endCubeRotatorCol = endCubeRotator.GetComponent<Collider>();
+		// set is Trigger
+		endCubeRotatorCol.isTrigger = true;
+
 		// Assign Script to endCubeRotator
 		endCubeRotator.AddComponent<EndScript>();
 		// Add Tag for sound
 		endCubeRotator.transform.gameObject.tag = "Ziel";
+
+		// Set isTrigger
 
 		// Set StartCube, endCube Size
 		startCube.transform.localScale = new Vector3(8.0f, 0.5f, 8.0f);
