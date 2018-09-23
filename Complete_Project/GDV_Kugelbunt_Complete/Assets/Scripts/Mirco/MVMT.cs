@@ -2,6 +2,7 @@
 using UnityEngine;
 using System;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MVMT : MonoBehaviour {
 
@@ -13,7 +14,7 @@ public class MVMT : MonoBehaviour {
     public Vector3 movement;
     public float jumpFactor = 0.0f;
     public float speed = 10;
-    public float heightToRespawn = -5;
+    public float heightToRespawn = -35;
     public float waitTimeBetweenBlinks = 0.25f;
     public int maxBlinkCount = 4;
     HealthSystem healthSystem = new HealthSystem(9);
@@ -177,7 +178,7 @@ public class MVMT : MonoBehaviour {
     //Lässt den Spielball kaputter aussehen, wenn er öfter kollidiert
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.GetComponent<WallScript>() || col.gameObject.GetComponent<Block>())
+        if (col.gameObject.GetComponent<WallScript>() || col.gameObject.GetComponent<Block>() || col.gameObject.CompareTag("KanonenKugel"))
         {
             healthSystem.Damage(1);
             if(healthSystem.GetHealth() <= 0)
@@ -194,17 +195,24 @@ public class MVMT : MonoBehaviour {
             }
             
         }
+    }
 
-        if (col.gameObject.CompareTag("Checkpoint"))
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Checkpoint"))
         {
             newPosition = gameObject.transform.position;
             startPosition = newPosition;
         }
+        if (other.gameObject.CompareTag("Ziel"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
-    
-       
-    
+
+
+
 
     #endregion
 

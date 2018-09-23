@@ -497,6 +497,7 @@ MonoBehaviour:
   rFloorPre: {fileID: 1242234728227486, guid: 463973af56e45d946987fcf472985a0a, type: 2}
   tFloorPre: {fileID: 1043884887752190, guid: 8fe3bebcc7ef54c41be9479de9673928, type: 2}
   iFloorPre: {fileID: 1899231916124318, guid: 1b60d3adf3598234bb9c843bb9a8abec, type: 2}
+  cFloorPre: {fileID: 0}
   floorArray:
   - {fileID: 1667909430407022, guid: ff99cda740bbf35478a7e12ddebb364c, type: 2}
   - {fileID: 1043884887752190, guid: 8fe3bebcc7ef54c41be9479de9673928, type: 2}
@@ -570,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
+  playerRePos: {x: 0, y: 0, z: 0}
 --- !u!135 &2017216436
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -644,7 +646,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2017216434}
   serializedVersion: 2
-  m_Mass: 0.5
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -664,3 +666,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  playerRePos: {x: 0, y: 0, z: 0}

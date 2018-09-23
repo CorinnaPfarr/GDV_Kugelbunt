@@ -10,8 +10,9 @@ public class WarningTextScript : MonoBehaviour {
 
     public GameObject Player;
     private float maxBlinkCount = 5;
-    private float waitTimeBetweenBlinks = 0.25f;
-    private CanvasRenderer canRenderer;
+    private float waitTimeBetweenBlinks = 0.5f;
+
+    private Coroutine blinkCoroutine;
 
     private void Start()
     {
@@ -30,11 +31,12 @@ public class WarningTextScript : MonoBehaviour {
     {
         if (Player.transform.position.z < 10)
         {
-            gameObject.SetActive(false);
+            textMesh.enabled = false;
         }
         else {
-            gameObject.SetActive(true);
-            StartCoroutine(Blink(maxBlinkCount));
+            textMesh.enabled = true;
+            if(blinkCoroutine == null)
+                blinkCoroutine = StartCoroutine(Blink(maxBlinkCount));
         }
     }
 
@@ -45,14 +47,12 @@ public class WarningTextScript : MonoBehaviour {
         while (blinkCount < maxBlinkCount)
         {
             yield return new WaitForSeconds(waitTimeBetweenBlinks);
-            gameObject.SetActive(false);
+            textMesh.text = "";
             yield return new WaitForSeconds(waitTimeBetweenBlinks);
-            gameObject.SetActive(true);
+            textMesh.text = "Warning!!!";
             blinkCount++;
             yield return null;
         }
+        gameObject.SetActive(false);
     }
-   
-
-
 }

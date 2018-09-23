@@ -9,14 +9,20 @@ public class CameraMVMT : MonoBehaviour {
     private void Start()
     {
         transform.Rotate(10, 0, 0);
-        
-    }
-    
 
-	// Update is called once per frame
-	void Update () {
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
         transform.position = player.position + offset;
-        
-	}
+
+    }
+
+    
     
 }
+
+
+ 
