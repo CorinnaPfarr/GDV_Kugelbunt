@@ -9,7 +9,7 @@ public class WarningTextScript : MonoBehaviour {
     private TextMeshProUGUI textMesh;
 
     public GameObject Player;
-    private float maxBlinkCount = 5;
+    private float maxBlinkCount = 3;
     private float waitTimeBetweenBlinks = 0.5f;
 
     private Coroutine blinkCoroutine;

@@ -21,6 +21,7 @@ public class Speed2 : MonoBehaviour
         GameObject collingObject = collision.gameObject;
         if (collingObject.gameObject == player)
         {
+            AudioManager.Instance.Play("speedBoost");
             if (mvmtScript.speed != newSpeed)
             {
                 oldSpeed = mvmtScript.speed;

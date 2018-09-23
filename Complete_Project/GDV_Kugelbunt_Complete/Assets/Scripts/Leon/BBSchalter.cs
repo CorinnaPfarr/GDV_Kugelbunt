@@ -13,6 +13,7 @@ public class BBSchalter : MonoBehaviour {
     }
 
     void OnTriggerEnter() {
+        //AudioManager.Instance.Play("lift up");
         bbs.schalterUmlegen();
     }
 	

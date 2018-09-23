@@ -146,6 +146,7 @@ public class MVMT : MonoBehaviour {
     //anfang Leons Codeeinschub
     public void festhalten()   //wenn der Gegner den Spieler einholt wird diese aktiviert->in Update geht es weiter *Leon
     {
+        AudioManager.Instance.Play("festhalten");
         tempSpeed = speed;
         speed = 0;
         blocked = true;
@@ -180,6 +181,7 @@ public class MVMT : MonoBehaviour {
     {
         if (col.gameObject.GetComponent<WallScript>() || col.gameObject.GetComponent<Block>() || col.gameObject.CompareTag("KanonenKugel"))
         {
+            AudioManager.Instance.Play("impact");
             healthSystem.Damage(1);
             if(healthSystem.GetHealth() <= 0)
             {
@@ -206,6 +208,7 @@ public class MVMT : MonoBehaviour {
         }
         if (other.gameObject.CompareTag("Ziel"))
         {
+            AudioManager.Instance.Play("Ziel");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
