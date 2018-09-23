@@ -7,14 +7,20 @@ public class BBSchalter : MonoBehaviour {
    
 
     public BeweglicherBlockScript bbs; //verknüpft sich mit dem anderen script
+    private bool geraeusch = true;
 
 	void Start () {
     
     }
 
     void OnTriggerEnter() {
-        //AudioManager.Instance.Play("lift up");
+        
         bbs.schalterUmlegen();
+        if(geraeusch == true)
+        {
+            AudioManager.Instance.Play("lift up");
+        }
+        geraeusch = false;
     }
 	
 	void Update () {
