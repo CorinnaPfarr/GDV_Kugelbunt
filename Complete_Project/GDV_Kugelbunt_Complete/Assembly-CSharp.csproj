@@ -85,17 +85,15 @@
      <Compile Include="Assets\Scripts\Tom\CheckpointSpawnerScript.cs" />
      <Compile Include="Assets\Scripts\Tom\deprecated\WayColliderScript.cs" />
      <Compile Include="Assets\Scripts\Tom\deprecated\WayGeneratorScript.cs" />
+     <Compile Include="Assets\Scripts\Tom\EndScript.cs" />
      <Compile Include="Assets\Scripts\Tom\FloorGenerator.cs" />
      <Compile Include="Assets\Scripts\Tom\ItemThreeSecScript.cs" />
      <Compile Include="Assets\Scripts\Tom\MenuScript.cs" />
      <Compile Include="Assets\Scripts\Tom\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\Tom\PusherScript.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Scripts\Tom\UIScript.cs" />
-=======
      <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
      <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
->>>>>>> master
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

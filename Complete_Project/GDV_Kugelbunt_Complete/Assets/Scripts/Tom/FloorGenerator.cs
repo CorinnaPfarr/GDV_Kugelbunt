@@ -73,14 +73,7 @@ public class FloorGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-		//Debug.Log(checkPList);
-
-<<<<<<< HEAD
 		// Set levelLength
-=======
-		// Set levelLength to 1024
->>>>>>> master
 		levelLength = 512;
 
 		// Set prefab runningNr
@@ -132,6 +125,13 @@ public class FloorGenerator : MonoBehaviour {
 		startCube.GetComponent<Renderer>().material = floorMat;
 		endCube.GetComponent<Renderer>().material = floorMat;
 		endCubeRotator.GetComponent<Renderer>().material = floorMatEnd;
+
+		// Assign Script to endCubeRotator
+		endCubeRotator.AddComponent<EndScript>();
+		// Get the Collider of the endCubeRotator
+		Collider endCubeRotatorCol = endCubeRotator.GetComponent<Collider>();
+		// set is Trigger
+		endCubeRotatorCol.isTrigger = true;
 
 		// Set StartCube, endCube Size
 		startCube.transform.localScale = new Vector3(8.0f, 0.5f, 8.0f);
