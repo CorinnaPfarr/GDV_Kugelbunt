@@ -21,6 +21,9 @@ public class CheckpointScript : MonoBehaviour {
 	// Active checkpoint bool
 	private bool isActive;
 
+	//
+	private FloorGenerator floorGenerator;
+
 	// Live amounts
 	private int liveNr;
 
@@ -33,16 +36,25 @@ public class CheckpointScript : MonoBehaviour {
 		// Set light intensity if player enters collider
 		checkLightComp.intensity = 50;
 
+		Debug.Log(floorGenerator.checkPList.Count);
+
+		// Set all checkpoints in list to active = false
+		for(int i = 0; i < floorGenerator.checkPList.Count; i++) {
+			floorGenerator.checkPList[i].gameObject.transform.GetChild(1).gameObject.GetComponent<CheckpointScript>().isActive = false;
+		}
+
 		// Set checkpoint obj position as respawn point
 		respawnPos = this.transform.position;
 		startPos = respawnPos;
 
-		// Active is true
+		// Active is true - everyone else is false
 		isActive = true;
 	}
 
 	// Use this for initialization
 	void Start () {
+		floorGenerator = GameObject.Find("FloorGenerator").GetComponent<FloorGenerator>();
+
 		// is active false
 		isActive = false;
 
@@ -81,13 +93,29 @@ public class CheckpointScript : MonoBehaviour {
 		// Rotate checkpoint sphere
 		transform.Rotate(new Vector3(0, 48, 12) * Time.deltaTime);
 
+		if(player.transform.position.y <= -15) {
+			// Decrease lives by 1
+			PlayerScript.lives = PlayerScript.lives - 1;
+			// lives -1
+			liveNr = PlayerScript.lives;
+
+			// respawn player
+			player.transform.position = startPos;
+			// Set movingSpeed 0
+			rbPlayer.velocity = Vector3.zero;
+			rbPlayer.angularVelocity = Vector3.zero;
+		}
+
+
 		// Check if player is falling
-		if(player.transform.position.y <= -10 && isActive == true) {
+		if(player.transform.position.y <= -10 && isActive) {
 			// Decrease lives by 1
 			PlayerScript.lives = PlayerScript.lives - 1;
 			// lives -1
 			liveNr = PlayerScript.lives;
 			
+
+
 			Debug.Log(startPos);
 
 			// respawn player

@@ -43,6 +43,8 @@ public class FloorGenerator : MonoBehaviour {
 	// List for generated prefabs
 	public List<GameObject> prefabList = new List<GameObject>();
 
+	public List<GameObject> checkPList = new List<GameObject>();
+
 	// Set endCube, endCubeRotator as global for update()
 	private GameObject endCubeRotator;
 	private GameObject endCube;
@@ -223,6 +225,8 @@ public class FloorGenerator : MonoBehaviour {
 			floorStart.name = "FloorCheck";
 			// Increment max random number for the pusher
 			maxCheckNr++;
+			// Add Checkpoint to list
+			checkPList.Add(floorStart);
 		} else {
 			// Spawn standard floorPrefabs and set randomNr Range to 0-2
 			randNr = Random.Range(0, 3);

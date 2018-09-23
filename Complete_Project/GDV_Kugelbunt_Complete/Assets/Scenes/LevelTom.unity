@@ -509,6 +509,7 @@ MonoBehaviour:
   rbPlayer: {fileID: 2017216440}
   player: {fileID: 2017216434}
   prefabList: []
+  checkPList: []
   levelLength: 0
 --- !u!1 &1267982368
 GameObject:
