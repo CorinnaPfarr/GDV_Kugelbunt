@@ -1,5 +1,5 @@
 ﻿/**  
-	Made by Tom Haupt, 21-09-2018.
+	Made by Tom Haupt, 23-09-2018.
  **/
 
 using System.Collections;
@@ -43,12 +43,6 @@ public class FloorGenerator : MonoBehaviour {
 	// List for generated prefabs
 	public List<GameObject> prefabList = new List<GameObject>();
 
-	// List for checkpoints
-	//private List<GameObject> checkPList;
-
-	// Reference to Checkpoint script
-	//private CheckpointScript script;
-
 	// Set endCube, endCubeRotator as global for update()
 	private GameObject endCubeRotator;
 	private GameObject endCube;
@@ -82,7 +76,7 @@ public class FloorGenerator : MonoBehaviour {
 
 		//Debug.Log(checkPList);
 
-		// Set levelLength to 1024
+		// Set levelLength
 		levelLength = 512;
 
 		// Set prefab runningNr
@@ -204,9 +198,6 @@ public class FloorGenerator : MonoBehaviour {
 		int randNr = Random.Range(0, 6);
 		int randOK = Random.Range(0, 100);
 
-		//Debug.Log("random: " + randNr);
-		//Debug.Log("random OK: " + randOK);
-
 		if(randNr == 3 && maxRandNr < 20 && randOK % 5 == 0) {
 			// If random int is 3 AND randNrMax is lower than 20 AND random nr between 0-100 is dividable by 5, spawn item.
 			floorStart = (GameObject)Instantiate(floorArray[randNr], floorStart.transform.GetChild(0).transform.GetChild(1).position, Quaternion.identity);
@@ -224,8 +215,6 @@ public class FloorGenerator : MonoBehaviour {
 		} else if(randNr == 5 && maxCheckNr < 4 && randOK % 24 == 0){
 			// If random int is 5 AND maxCheckNr is lower than 4 AND random nr between 0-100 is dividable by 24, spawn checkpoint.
 			floorStart = (GameObject)Instantiate(floorArray[randNr], floorStart.transform.GetChild(0).transform.GetChild(1).position, Quaternion.identity);
-			// Get script values for generated prefab
-			//script = (CheckpointScript)floorStart.GetComponent<CheckpointScript>();
 			// Set name for check
 			floorStart.name = "FloorCheck";
 			// Increment max random number for the pusher
@@ -238,8 +227,6 @@ public class FloorGenerator : MonoBehaviour {
 			floorStart.name = "FloorStandard";
 		}
 
-		// Assign Prefab a Name for later calling.
-		//floorStart.name = "generatedPrefab#" + runningNr;
 		// Add prefab to prefabList
 		prefabList.Insert(runningNr, floorStart);
 	}

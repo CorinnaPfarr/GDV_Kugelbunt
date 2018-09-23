@@ -18,30 +18,34 @@ public class UIScript : MonoBehaviour {
 	private int liveNr;
 
 	// seconds that can be decreased
-	public static float realSec;
+	public float realSec;
 
 	// get seconds
-	public static float getSeconds() {
+	public float getSeconds() {
 		return realSec;
+	}
+
+	public void setSeconds(float wert) {
+		realSec = realSec - wert;
 	}
 
 	// Use this for initialization
 	void Start () {
 		// Start is actual time
-		start = Time.time;
+		//start = Time.time;
 		// Set amount of lives
 		liveNr = PlayerScript.lives;
+
+		realSec = 0f;
+
+		// Instantiate UI Prefab
+		//Canvas uiPre = (Canvas) Resources.Load("Prefabs/Tom/UI", typeof(Canvas));
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		// Calc - update Time
-		realSec = Time.time - start;
-
-		// Temp var
-		//realSec = end;
-
-		//Debug.Log("TIME: " + realSec);
+		realSec += Time.deltaTime;
 
 		// Check for live changes
 		liveNr = PlayerScript.lives;
