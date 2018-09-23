@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour {
 
@@ -18,6 +19,16 @@ public class PlayerScript : MonoBehaviour {
 		if(colObj.gameObject.CompareTag("ItemThree")) {
 			//colObj.gameObject.SetActive(false);
 			Destroy(colObj.gameObject);
+		}
+	}
+
+	// Check if player lives are 0, then go to menu
+	void Update() {
+		if(lives <= 0) {
+			// Load Menu
+			SceneManager.LoadScene("Menu");
+			// Trigger sound
+			
 		}
 	}
 

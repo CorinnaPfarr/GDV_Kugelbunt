@@ -18,6 +18,9 @@ public class CheckpointScript : MonoBehaviour {
 	public Vector3 respawnPos;
 	private Vector3 startPos;
 
+	// Active checkpoint bool
+	private bool isActive;
+
 	// Live amounts
 	private int liveNr;
 
@@ -34,11 +37,15 @@ public class CheckpointScript : MonoBehaviour {
 		respawnPos = this.transform.position;
 		startPos = respawnPos;
 
-		Debug.Log(startPos);
+		// Active is true
+		isActive = true;
 	}
 
 	// Use this for initialization
 	void Start () {
+		// is active false
+		isActive = false;
+
 		// Get player object
 		player = GameObject.Find("Player");
 
@@ -74,11 +81,8 @@ public class CheckpointScript : MonoBehaviour {
 		// Rotate checkpoint sphere
 		transform.Rotate(new Vector3(0, 48, 12) * Time.deltaTime);
 
-		//Debug.Log("Respawn Vec: " + respawnPos);
-		//Debug.Log("Start Vec: " + startPos);
-
 		// Check if player is falling
-		if(player.transform.position.y <= -10) {
+		if(player.transform.position.y <= -10 && isActive == true) {
 			// Decrease lives by 1
 			PlayerScript.lives = PlayerScript.lives - 1;
 			// lives -1
