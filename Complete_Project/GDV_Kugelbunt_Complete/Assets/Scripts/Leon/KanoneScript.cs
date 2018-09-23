@@ -40,6 +40,7 @@ public class KanoneScript : MonoBehaviour {
              
                // GameObject bullet;
                 Instantiate(bullet, transform.position + (player.transform.position - transform.position).normalized, transform.rotation); //das Projektil Prefab wird Instanziert und zwischen Spieler und Objekt platziert
+                //AudioManager.Instance.Play("Kanonensound");
                 ticktack = intervall;
             }
         }

@@ -9,6 +9,8 @@ TagManager:
   - ItemThree
   - Projektil
   - Checkpoint
+  - KanonenKugel
+  - Ziel
   layers:
   - Default
   - TransparentFX

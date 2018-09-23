@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114094606632601444}
   m_Layer: 0
   m_Name: Projektil2
-  m_TagString: Projektil
+  m_TagString: KanonenKugel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
