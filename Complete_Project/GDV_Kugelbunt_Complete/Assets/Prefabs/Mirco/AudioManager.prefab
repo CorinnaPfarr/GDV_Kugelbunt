@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: gameOver
-    clip: {fileID: 8300000, guid: b9f60d2e8f301f3468464a065ca7dfdc, type: 3}
+  - name: impact
+    clip: {fileID: 8300000, guid: 5260f09e5e373cd4097e4a0ca8bc45a3, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -64,8 +64,32 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: jump
+    clip: {fileID: 8300000, guid: 80a256843e9b92044a9c89a93f6fac81, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: festhalten
+    clip: {fileID: 8300000, guid: eef5d2addfd57624f97f7ee8065636b9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Speedboost
+    clip: {fileID: 8300000, guid: f3f4b806cf40e2343a38691c38a7a453, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   - name: gameOver
-    clip: {fileID: 8300000, guid: b9f60d2e8f301f3468464a065ca7dfdc, type: 3}
+    clip: {fileID: 8300000, guid: c906cc067583f0a479f324c891b97b1d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: gameOver
+    clip: {fileID: 8300000, guid: c906cc067583f0a479f324c891b97b1d, type: 3}
     volume: 1
     pitch: 1
     loop: 0
