@@ -8,7 +8,10 @@ public class PlayerScript : MonoBehaviour {
 
 	public float speed;
 
-	public Vector3 playerRePos;
+	//public Vector3 playerRePos;
+
+	// Lives amount, must be public static, CHANGE LIVE AMOUNT HERE!!!
+	public static int lives = 3;
 
 	// When player collides with item
 	void OnCollisionEnter(Collision colObj) {

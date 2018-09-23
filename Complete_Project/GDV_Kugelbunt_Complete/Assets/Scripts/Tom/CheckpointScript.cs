@@ -18,14 +18,14 @@ public class CheckpointScript : MonoBehaviour {
 	public Vector3 respawnPos;
 	private Vector3 startPos;
 
-	//private PlayerScript playerScript = (PlayerScript)playerScript.GetComponent<PlayerScript>();
+	// Live amounts
+	private int liveNr;
 
 	public List<GameObject> checkPList = new List<GameObject>();
 
 	void OnTriggerEnter(Collider colObj) {
 		// Dont render sphere anymore
 		gameObject.GetComponent<Renderer>().enabled = false;
-		//Destroy(gameObject);
 
 		// Set light intensity if player enters collider
 		checkLightComp.intensity = 50;
@@ -80,8 +80,10 @@ public class CheckpointScript : MonoBehaviour {
 
 		// Check if player is falling
 		if(player.transform.position.y <= -10) {
+			// Decrease lives by 1
+			PlayerScript.lives = PlayerScript.lives - 1;
 			// lives -1
-			// todo
+			liveNr = PlayerScript.lives;
 			
 			// respawn player
 			player.transform.position = startPos;

@@ -44,7 +44,7 @@ public class FloorGenerator : MonoBehaviour {
 	public List<GameObject> prefabList = new List<GameObject>();
 
 	// List for checkpoints
-	private List<GameObject> checkPList;
+	//private List<GameObject> checkPList;
 
 	// Reference to Checkpoint script
 	//private CheckpointScript script;
@@ -67,7 +67,7 @@ public class FloorGenerator : MonoBehaviour {
 	private int runningNr;
 
 	// levelLength nr
-	private int levelLength;
+	public int levelLength;
 
 	// Last Generated Prefab, to get x,y,z axis
 	private GameObject lastPrefab;
@@ -80,10 +80,10 @@ public class FloorGenerator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		Debug.Log(checkPList);
+		//Debug.Log(checkPList);
 
 		// Set levelLength to 1024
-		levelLength = 1024;
+		levelLength = 512;
 
 		// Set prefab runningNr
 		runningNr = 0;
