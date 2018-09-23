@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 111
+  controlID: 63
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -89,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 379
     height: 573
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 112
+  controlID: 64
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 113
+  controlID: 65
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,20 +323,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Mirco/Sounds
+    - Assets/Scripts/Mirco
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/Mirco/Sounds
+  - Assets/Scripts/Mirco
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\mirco\OneDrive\Desktop\Kugelbunt\GDV_Kugelbunt\Complete_Project\GDV_Kugelbunt_Complete
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 180b0000
-    m_LastClickedID: 2840
-    m_ExpandedIDs: 00000000e6090000080a0000740a0000aa0a0000de0a00002a0c0000b60c0000d40c0000
+    m_SelectedIDs: 160e0000
+    m_LastClickedID: 3606
+    m_ExpandedIDs: 00000000f0090000120a00007e0a0000b60a0000ea0a0000440b00003a0c0000e40c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e6090000080a0000740a0000aa0a0000de0a0000360b0000ce0b00002a0c0000b60c0000d40c0000100d0000
+    m_ExpandedIDs: 00000000f0090000120a00007e0a0000b60a0000ea0a00003a0c0000c60c0000e40c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -480,9 +480,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 10e5ffff
-    m_LastClickedID: -6896
-    m_ExpandedIDs: b2ebffff64fbffff00000000
+    m_SelectedIDs: 3c3c0000
+    m_LastClickedID: 15420
+    m_ExpandedIDs: ee80ffff52bdffff5cefffffd8fbffff0000000092360000e03800006e3a0000983d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -532,14 +532,14 @@ MonoBehaviour:
     height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 0
+  lastFramingTime: 251.57809360686264
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.4602184, y: 3.8340726, z: 35.713135}
+    m_Target: {x: 58.009216, y: -25.798962, z: 1123.467}
     speed: 2
-    m_Value: {x: 4.4602184, y: 3.8340726, z: 35.713135}
+    m_Value: {x: 58.009216, y: -25.798962, z: 1123.467}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -567,13 +567,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.13956381, y: 0.23868759, z: -0.034686267, w: -0.960389}
+    m_Target: {x: 0.02191769, y: 0.9640035, z: -0.084080555, w: 0.25129148}
     speed: 2
-    m_Value: {x: -0.13956381, y: 0.23868759, z: -0.034686267, w: -0.960389}
+    m_Value: {x: 0.02191769, y: 0.9640035, z: -0.084080555, w: 0.25129148}
   m_Size:
-    m_Target: 42.661045
+    m_Target: 173.68379
     speed: 2
-    m_Value: 42.661045
+    m_Value: 173.68379
   m_Ortho:
     m_Target: 0
     speed: 2
